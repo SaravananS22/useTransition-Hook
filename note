@@ -1,0 +1,6 @@
+* The useTransition hook is part of React's Concurrent Mode features. It allows you to mark state updates as non-urgent, which means they can be deferred to keep the UI responsive during heavier operations. It returns an array with two elements:
+
+1) A boolean isPending that indicates whether the transition is ongoing.
+2) A startTransition function that you can wrap around your non-urgent updates.
+
+const [isPending, startTransition] = useTransition();
